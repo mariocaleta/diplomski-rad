@@ -13,14 +13,14 @@ body,
 
 /* Messages.js */
 .messages {
+  /*height: 70vh;
+  overflow-y: scroll;*/
+}
+/*
+.messages__progress {
   height: 70vh;
   overflow-y: scroll;
-}
-
-.messages__progress {
-  height: 67vh;
-  overflow-y: scroll;
-}
+}*/
 
 /* MessageForm.js */
 .message__form {

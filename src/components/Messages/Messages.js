@@ -310,7 +310,7 @@ class Messages extends React.Component {
           isChannelStarred={isChannelStarred}
         />
 
-        <Segment>
+        <Segment style={{ overflow: "auto", height: "72vh" }}>
           <Comment.Group
             className={progressBar ? "messages__progress" : "messages"}
           >
