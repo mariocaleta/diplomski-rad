@@ -26,7 +26,14 @@ class DirectMessages extends React.Component {
 
   componentWillUnmount() {
     this._isMounted = false;
+    this.removeListeners();
   }
+
+  removeListeners = () => {
+    this.state.usersRef.off();
+    this.state.presenceRef.off();
+    this.state.connectedRef.off();
+  };
 
   addListeners = currentUserUid => {
     let loadedUsers = [];
